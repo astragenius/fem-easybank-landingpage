@@ -79,7 +79,37 @@ select {
 /* Utility Classes */
 :root {
   
+  /* color */
+
+  /* primary */
+  
+  --dark-blue: 233 26% 23%;
+  --lime-green: 136 65% 51%;
+  --bright-cyan: 192 70% 51%;
+
+  /* neutral */
+  --grayish-blue: 233 8% 62%;
+  --light-grayish-blue: 220 16% 96%;
+  --very-light-gray: 0 0% 98%;
+  --white: 0 0% 100%;
+
+  /* gradient */
+  --linear-gradient: linear-gradient(hsl(var(--lime-green) ), hsl(var(--bright-cyan)) );
+
+  /* Fluid Fontsize */
+  --step--8: clamp;/* 40px to 56px */
+  --step--7: clamp(1.10rem, 1.02rem + 0.33vw, 1.32rem);/* 35px to 49px */
+  --step--6: clamp(1.23rem, 1.13rem + 0.42vw, 1.51rem);/* 32px to 42px */
+  --step--5: clamp(1.39rem, 1.26rem + 0.53vw, 1.74rem);/* 28px to 37px */
+  --step--4: clamp(1.56rem, 1.41rem + 0.66vw, 2.00rem);/* 25px to 32px */
+  --step--3: clamp(1.76rem, 1.56rem + 0.82vw, 2.30rem);/* 22px to 28px */
+  --step--2: clamp(1.98rem, 1.74rem + 1.01vw, 2.65rem);/* 20px to 24px */
+  --step--1: clamp(2.22rem, 1.93rem + 1.23vw, 3.04rem);/* 17px to 21px */
+  --step-0: clamp(2.50rem, 2.15rem + 1.50vw, 3.50rem); /* 15px to 18px */
+  
 }
+
+
 
 /* main container */
 .wrapper {
@@ -92,9 +122,10 @@ select {
     position: relative;
   }
 
+ 
   
 
 
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }}
