@@ -101,7 +101,7 @@ select {
   /* Fluid Fontsize */
   --step--8: clamp(2.50rem, 2.15rem + 1.50vw, 3.50rem);/* 40px to 56px */
   --step--7: clamp(1.10rem, 1.02rem + 0.33vw, 1.32rem);/* 35px to 49px */
-  --step--6: clamp(1.23rem, 1.13rem + 0.42vw, 1.51rem);/* 32px to 42px */
+  --step--6: clamp(1.5rem, 2rem + 0.42vw, 2.625rem);/* 32px to 42px */
   --step--5: clamp(1.39rem, 1.26rem + 0.53vw, 1.74rem);/* 28px to 37px */
   --step--4: clamp(1.56rem, 1.41rem + 0.66vw, 2.00rem);/* 25px to 32px */
   --step--3: clamp(1.76rem, 1.56rem + 0.82vw, 2.30rem);/* 22px to 28px */
@@ -446,11 +446,58 @@ ul {
 }
 
 
-/* Why section  */
+/* Choose section  */
 
-
+.choose {
+  text-align: center;
+  background-color: hsl(var(--light-gray));
+}
+.choose img {
+  display: inline-block;
+  text-align: center;
+}
+.choose p {
   
+  color: hsl(var(--grayish-blue));
+  font-size: 0.9375rem;
+}
+.choose h2, h3 {
+  font-size: var(--step--5);
+  color: hsl(var(--dark-blue));
+  font-weight: var(--fw-300);
+  margin-bottom: 0.5em;
+}
 
+.choose__text {
+  
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.choose__text h2 {
+  font-size: var(--step--6);
+  letter-spacing: -0.57px;
+  line-height: 38px;
+}
+
+.col {
+  margin-top: 2.5em;
+}
+
+
+
+
+/* Article Section */
+
+
+
+
+
+/* Footer */
+
+.footer {
+  background-color: hsl(var(--dark-blue));
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
