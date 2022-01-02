@@ -224,12 +224,12 @@ ul {
 }
 
 .middle_line {
-  top: 4px;
+  top: 6px;
   
 }
 
 .bottom_line {
-  top: 8px;
+  top: 12px;
 }
 
 /* hamburger menu open status (with open class toggle) */
@@ -249,10 +249,6 @@ ul {
   left: 0px;
   
 }
-
-
-
-
 
 
 
@@ -283,6 +279,34 @@ ul {
   color: hsl(var(--dark-blue))
 }
 
+.nav__desktop a {
+  
+  position: relative;
+  font-size: 14px;
+  letter-spacing: -0.11px;
+  color: hsl(var(--grayish-blue));
+  transition: 0.3s ease-in;
+}
+.nav__desktop a:hover {
+  color: hsl(var(--dark-blue));
+}
+
+.nav__desktop a::before {
+  
+  position: absolute;
+  content: "";
+  background-color: hsl(var(--lime-green) );
+  top: 47px;
+  border-radius: 10px;
+}
+
+.nav__desktop a:hover::before {
+  transition:all 0.3s linear 0s;
+  width: 51px;
+  height: 4px;
+  
+}
+
 
 
 /* Desktop Navigation breakpoint */
@@ -311,7 +335,7 @@ ul {
   }
 }
  
-/* Hero-Section */
+/* Hero-Section */ 
 
 .hero {
   background-color: hsl(var(--very-light-gray));
@@ -404,8 +428,9 @@ ul {
   
   .hero__img::before {
     background-image: url(/dist/images/bg-intro-desktop.svg);
-    background-size: 100%;
-    left: 30%;
+    background-size: 60%;
+    left: 40%;
+   
     
   
   }
@@ -419,6 +444,9 @@ ul {
     
   
 }
+
+
+/* Why section  */
 
 
   
