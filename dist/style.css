@@ -114,6 +114,10 @@ select {
   --fw-400: 400;
   --fw-700: 700;
 }
+
+body {
+  position: relative;
+}
 header {
    
   /* border: 2px solid magenta; */
@@ -145,9 +149,12 @@ ul {
 }
 
 .full-bleed {
+  position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
+
+
 
 
 
@@ -198,7 +205,7 @@ ul {
   right: 0%;
   top: 200%;
   
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +213,8 @@ ul {
   width: 100%;
   padding: 1em 0;
   border-radius: 4px;
-  border: 2px solid black;
+  background-color: hsl(var(--white));
+  z-index: 1000;
 }
 
 .nav__mobile a {
@@ -256,7 +264,7 @@ ul {
 
 .hero__img {
 
-  min-height: 10rem;
+  min-height: 20.5rem;
 }
 
 .hero__img::before {
@@ -264,7 +272,7 @@ ul {
   position: absolute;
   background-image: url(/dist/images/bg-intro-mobile.svg);
   background-size: 100%;
-  height: 100%;
+  height: 120%;
   width: 100%;
   background-repeat: no-repeat;
   
@@ -318,34 +326,37 @@ ul {
   }
 
   .hero__text {
-    width: 50%;
+    max-width: 30%;
+   
+  }
+  .hero__text h1{
+    margin-bottom: 1rem;  
+  }
+
+  .hero__btn {
+    text-align: left;
   }
 
   .hero__img {
     width: 100%;
     min-height: 40rem;
-    
+    flex: 2;    
   }
 
   
   .hero__img::before {
-    content: "";
-    position: absolute;
     background-image: url(/dist/images/bg-intro-desktop.svg);
-    background-size: 116%;
-    height: 99%;
-    width: 100%;
+    background-size: 100%;
+    left: 30%;
     
   
   }
   .hero__img::after {
-    content: "";
-    position: absolute;
-    background-image: url(/dist/images/image-mockups.png);
     background-position: center bottom;
-    background-repeat: no-repeat;
-    height: 124%;
+    background-size: 55%;
+    height: 130%;
     width: 115%;
+    left: 30%;
   }
     
   
