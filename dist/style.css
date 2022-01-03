@@ -89,17 +89,24 @@ select {
   --lime-green: 136 65% 51%;
   --bright-cyan: 192 70% 51%;
 
-  /* neutral */
-  --grayish-blue: 233 8% 62%;
+  /* Hover color */
+  --lime-hover: hsl(var(--lime-green) /.5);
+  --cyan-hover: hsl(var(--bright-cyan) /.5);
+
+  /* neutral */;
+  --grayish-blue: 233 8% ;
   --light-grayish-blue: 220 16% 96%;
   --very-light-gray: 0 0% 98%;
   --white: 0 0% 100%;
 
   /* gradient */
   --linear-gradient: linear-gradient(hsl(var(--lime-green) ), hsl(var(--bright-cyan)) );
+  
+  /* gradient Hover */
+  --linear-gradient-hover: linear-gradient(var(--lime-hover), var(--cyan-hover));
 
   /* Fluid Fontsize */
-  --step--8: clamp(2.50rem, 2.15rem + 1.50vw, 3.50rem);/* 40px to 56px */
+  --step--8: clamp;/* 40px to 56px */
   --step--7: clamp(1.10rem, 1.02rem + 0.33vw, 1.32rem);/* 35px to 49px */
   --step--6: clamp(1.5rem, 2rem + 0.42vw, 2.625rem);/* 32px to 42px */
   --step--5: clamp(1.39rem, 1.26rem + 0.53vw, 1.74rem);/* 28px to 37px */
@@ -142,10 +149,16 @@ ul {
 .btn-cta {
   padding: 0.8em 2em;
   color: hsl(var(--white));
+  background-color: hsl(var(--white));
   background: var(--linear-gradient);
   border-radius: 22px;
   font-size: 14px;
   font-weight: bold;
+}
+.btn-cta:hover {
+  
+  transition: .3s ease-in-out;
+  background: var(--linear-gradient-hover);
 }
 
 .full-bleed {
@@ -543,13 +556,56 @@ span {
 .footer {
   background-color: hsl(var(--dark-blue));
   text-align: center;
+  padding: 2.5em 0;
+}
+.footer__logo {
+  margin-bottom: 1.5em;
 }
 .footer--logo {
- fill: hsl(var(--white));
+  fill: hsl(var(--white));
+  
 }
+
+.footer__nav {
+  margin: 2em 0;
+}
+
+.footer__nav a {
+  display: inline-block;
+  color: hsl(var(--very-light-gray));
+  font-size: var(--step-0);
+  padding-bottom: 0.5625em;
+  transition: 0.2s ease-in-out;
+}
+.footer__nav a:hover {
+  color: hsl(var(--lime-green));
+}
+.footer__nav ul {
+  margin:0;
+}
+
+
+.socialmedia >
 svg:hover path {
   fill: hsl(var(--lime-green) );
+  transition: 0.3s ease-in;
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.socialmedia svg {
+  
+  margin-left: 1em;
+}
 
+.footer--btn {
+  display: inline-block;
+  margin-bottom: 1.5em;
+}
+.copyright small {color: hsl(var(--grayish-blue));}
+
+
+.attribution {
+  font-size: 11px; text-align: center;
+  color: hsl(var(--grayish-blue));
+ }
+ .attribution a {
+  color: hsl(var(--very-light-gray));
+ }
