@@ -500,6 +500,37 @@ ul {
 
 
 
+/* Choose section Desktop version */
+
+@media (min-width: 700px) {
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.875em;
+  }
+
+  .col {
+    text-align: left;
+    flex: 1;
+  }
+  .col p {
+    line-height: 26px;
+  }
+
+  .choose img {
+    margin-bottom: 2.5em;
+  }
+
+  .choose__text {
+    width: 40%;
+    text-align: left;
+  }
+  
+  
+}
+
+
 
 /* Article Section */
 
