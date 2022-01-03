@@ -545,6 +545,7 @@ ul {
   letter-spacing: -0.57px;
   line-height: 38px;
   text-align: center;
+  font-weight: var(--fw-300);
   
 }
 
@@ -614,7 +615,7 @@ small {
 .footer__nav a {
   display: inline-block;
   color: hsl(var(--very-light-gray));
-  font-size: var(--step-0);
+  font-size: 0.9375rem;
   padding-bottom: 0.5625em;
   transition: 0.2s ease-in-out;
 }
@@ -649,4 +650,63 @@ svg:hover path {
  }
  .attribution a {
   color: hsl(var(--very-light-gray));
+ }
+
+
+ /* Footer layout for desktop */
+
+ @media (min-width: 700px) {
+   
+    .footer {
+      text-align: left;
+      padding-bottom: 0em;
+    }
+
+    .footer__flex {
+      display: flex;
+    }
+
+    .logo__flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .socialmedia svg {
+  
+      margin-right: 1em;
+      margin-left: 0;
+    }
+
+    .footer__nav {
+      display: flex;
+      flex: 1;
+      justify-content: space-evenly;
+      margin: 0;
+    }
+
+    .footer__nav a {
+      display: inline;
+    }
+
+    .footer__nav--left,
+    .footer__nav--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+
+
+    .footer__btn__flex {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+    }
+
+    .attribution {
+      padding-top: 2.5em;
+    }
  }
