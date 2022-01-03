@@ -94,7 +94,7 @@ select {
   --cyan-hover: hsl(var(--bright-cyan) /.5);
 
   /* neutral */;
-  --grayish-blue: 233 8% ;
+  --grayish-blue: 233 8% 62%;
   --light-grayish-blue: 220 16% 96%;
   --very-light-gray: 0 0% 98%;
   --white: 0 0% 100%;
@@ -106,7 +106,7 @@ select {
   --linear-gradient-hover: linear-gradient(var(--lime-hover), var(--cyan-hover));
 
   /* Fluid Fontsize */
-  --step--8: clamp;/* 40px to 56px */
+  --step--8: clamp(2.50rem, 2.15rem + 1.50vw, 3.50rem)/* 40px to 56px */;
   --step--7: clamp(1.10rem, 1.02rem + 0.33vw, 1.32rem);/* 35px to 49px */
   --step--6: clamp(1.5rem, 2rem + 0.42vw, 2.625rem);/* 32px to 42px */
   --step--5: clamp(1.39rem, 1.26rem + 0.53vw, 1.74rem);/* 28px to 37px */
@@ -149,7 +149,6 @@ ul {
 .btn-cta {
   padding: 0.8em 2em;
   color: hsl(var(--white));
-  background-color: hsl(var(--white));
   background: var(--linear-gradient);
   border-radius: 22px;
   font-size: 14px;
@@ -528,11 +527,19 @@ article img {
 .article__text {
   padding: 1.9375rem;
 }
-.article__text h4 {
+.article__text h4 a {
   color: hsl(var(--dark-blue));
   font-size: 16px;
   margin: 8px 0;
+  font-weight: var(--fw-300);
+  transition: .3s ease-in-out;
 }
+
+.article__text h4 a:hover {
+  color:hsl(var(--lime-green) );
+  
+}
+
 .article__text span {
   font-size: 10px;
 }
@@ -542,7 +549,7 @@ article img {
 
 .article__text p,
 span {
-  color: hsl(var(--grayish-blue));
+  color: hsl(var(--grayish-blue))
 }
 
 
