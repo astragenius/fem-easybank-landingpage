@@ -548,7 +548,7 @@ article img {
 }
 
 .article__text p,
-span {
+small {
   color: hsl(var(--grayish-blue))
 }
 
