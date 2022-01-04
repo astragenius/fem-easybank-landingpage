@@ -16,17 +16,10 @@
         <a href="#">
           <img src="images/logo.svg" alt="Brand name Easybank">
         </a>
-        <nav>
+        <nav aria-label="Main Navigation">
           
-          <ul id="nav__mobile" class="nav__mobile">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-          </ul>
           
-          <ul class="nav__desktop">
+          <ul class="nav__desktop" aria-label="Desktop Navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="ä">Contact</a></li>
@@ -34,12 +27,19 @@
             <li><a href="#">Careers</a></li>
           </ul>
           
-          <div id="mobileMenu" class="hamburger__menu">
+          <div id="mobileMenu" class="hamburger__menu nav--btn">
             <span class="top_line"></span>
             <span class="middle_line"></span>
             <span class="bottom_line"></span>
           </div>
           
+          <ul id="nav__mobile" class="nav__mobile" aria-label="Mobile Navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
         </nav>
         
         <a href="#" class="btn btn-cta btn--header ">Request Invite</a>
