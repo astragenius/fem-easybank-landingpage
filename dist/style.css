@@ -177,7 +177,7 @@ ul {
   height: 100vh;
   width: 100%;
   z-index: 500;
-  top: 6%;
+  top: 1.1%;
   
 }
 
@@ -271,10 +271,11 @@ ul {
 
 .nav__mobile {
   position: absolute;
-  right: 0%;
+  right: -150%;
   top: 200%;
   
-  display: none;
+  visibility: hidden;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -317,6 +318,15 @@ ul {
   transition:all 0.3s linear 0s;
   width: 51px;
   height: 4px;
+  
+}
+
+
+/* Mobile navigation slide animation */
+.nav__mobile.slideOpen {
+  
+  right: 0%;
+  visibility: visible;
   
 }
 
@@ -404,6 +414,10 @@ ul {
 .hero__btn {
   margin-top: 2em;
   text-align: center;
+}
+.hero__btn a {
+  margin-bottom: 5em;
+  display: inline-block;
 }
 
 
