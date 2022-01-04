@@ -277,12 +277,12 @@ ul {
 
 .nav__mobile a {
   font-size: 18px;
-  color: hsl(var(--grayish-blue));
+  color: hsl(var(--dark-blue));
   transition: 0.3s ease-in;
 }
 
 .nav__mobile a:hover {
-  color: hsl(var(--dark-blue));
+  color: hsl(var(--lime-green));
 }
 
 
@@ -743,3 +743,4 @@ svg:hover path {
       padding-top: 2.5em;
     }
  }
+}
