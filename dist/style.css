@@ -167,19 +167,23 @@ ul {
 }
 
 .overlay {
-  position: relative;
-}
-
-.overlay::before {
+  
   position: absolute;
-  content: "";
   background: linear-gradient(hsl(var(--dark-blue)), transparent);
-  height: 100vh;
+  height: 0;
   width: 100%;
   z-index: 500;
-  top: 1.1%;
-  
+  transition: 0.3s ease-in-out;
+
 }
+
+.overlay.open {
+  height: 100vh;
+}
+
+
+
+
 
 
 
@@ -271,9 +275,9 @@ ul {
 
 .nav__mobile {
   position: absolute;
-  right: -150%;
+  right: 150%;
   top: 200%;
-  
+  opacity: 0;
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -285,6 +289,7 @@ ul {
   border-radius: 4px;
   background-color: hsl(var(--white));
   z-index: 1000;
+  transition: .5s ease-in-out
 }
 
 .nav__mobile a {
@@ -327,6 +332,8 @@ ul {
   
   right: 0%;
   visibility: visible;
+  opacity: 1;
+  
   
 }
 

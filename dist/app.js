@@ -1,9 +1,9 @@
 const mobileMenu = document.getElementById('mobileMenu');
 const navMobile = document.getElementById('nav__mobile');
-const body = document.getElementById('body');
+const overlay = document.getElementById('overlay');
 
 mobileMenu.addEventListener('click', () => {
     mobileMenu.classList.toggle('open');
     navMobile.classList.toggle('slideOpen');
-    body.classList.toggle('overlay');
+    overlay.classList.toggle('open');
 })
