@@ -144,10 +144,6 @@ ul { padding: 0; }
   border: 0;
 }
 
-.btn {
-  border: none;
-  background: none;
-}
 .btn-cta {
   padding: 0.8em 2em;
   color: hsl(var(--white));
@@ -155,11 +151,12 @@ ul { padding: 0; }
   font-weight: bold;
   background: var(--linear-gradient);
   border-radius: 22px;
+  border: none;
 }
 .btn-cta:hover {
   
   background: var(--linear-gradient-hover);
-  transition: .3s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .full-bleed {
@@ -593,17 +590,21 @@ svg:hover path {
   fill: hsl(var(--lime-green) );
   transition: 0.3s ease-in;
 }
-.socialmedia svg { margin-left: 1em; }
+.socialmedia svg {
+  margin-left: 1em;
+  cursor: pointer;
+}
 
 .footer--btn {
   display: inline-block;
   margin-bottom: 1.5em;
 }
-.copyright small {color: hsl(var(--grayish-blue));}
+.copyright small { color: hsl(var(--grayish-blue)); }
 
 
-.attribution {
-  font-size: 11px; text-align: center;
+ .attribution {
+  font-size: 11px; 
+  text-align: center;
   color: hsl(var(--grayish-blue));
  }
  .attribution a { color: hsl(var(--very-light-gray)); }
