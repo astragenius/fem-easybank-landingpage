@@ -490,7 +490,7 @@ ul { padding: 0; }
 
 /* Choose section Desktop version */
 
-@media (min-width: 700px) {
+@media (min-width: 43.75em) {
 
   .row {
     display: flex;
@@ -501,6 +501,7 @@ ul { padding: 0; }
 
   .col {
     flex: max(300px, 100%/4 - 1em);
+    text-align: left;
 
   }
   .col p { line-height: 26px; }
