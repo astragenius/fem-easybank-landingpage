@@ -485,21 +485,23 @@ ul { padding: 0; }
 
 .col { margin-top: 2.5em; }
 
-/*  */
+/* Tablet version */
+
 
 /* Choose section Desktop version */
 
-@media (min-width: 62.5em) {
+@media (min-width: 700px) {
 
   .row {
     display: flex;
-    justify-content: space-between;
-    gap: 1.875em;
+    gap:1em;
+    flex-wrap: wrap;
+    
   }
 
   .col {
-    flex: 1;
-    text-align: left;
+    flex: max(300px, 100%/4 - 1em);
+
   }
   .col p { line-height: 26px; }
 
