@@ -308,7 +308,7 @@ ul { padding: 0; }
 
 /* Desktop Navigation breakpoint */
 
-@media (min-width: 43.75em) {
+@media (min-width: 62.5em) {
   
   
 
@@ -411,7 +411,7 @@ ul { padding: 0; }
 
 /* Hero section desktop version */
 
-@media (min-width: 43.75em) {
+@media (min-width: 62.5em) {
 
   .hero { position: relative; }
   .hero__flex {
@@ -485,11 +485,11 @@ ul { padding: 0; }
 
 .col { margin-top: 2.5em; }
 
-
+/*  */
 
 /* Choose section Desktop version */
 
-@media (min-width: 700px) {
+@media (min-width: 62.5em) {
 
   .row {
     display: flex;
@@ -612,7 +612,7 @@ svg:hover path {
 
  /* Footer layout for desktop */
 
- @media (min-width: 43.75em) {
+ @media (min-width: 62.5em) {
    
     .footer {
       padding-bottom: 0em;
