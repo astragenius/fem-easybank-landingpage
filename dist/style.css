@@ -160,7 +160,6 @@ ul { padding: 0; }
 }
 
 .full-bleed {
-  position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
 }
@@ -358,28 +357,27 @@ ul { padding: 0; }
 .hero { background-color: hsl(var(--very-light-gray)); }
 .hero__flex { display: block; }
 
-.hero__img { min-height: 20.5rem; }
 
-.hero__img::before {
-  position: absolute;
-  content: "";
-  height: 120%;
-  width: 100%;
+.hero__img {
+  
+  position: relative;
+  min-height: 20.5rem;
   background-image: url(images/bg-intro-mobile.svg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   
 
 }
-.hero__img::after {
+.hero__img::before {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
   background-image: url(images/image-mockups.png);
-  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center bottom;
 }
 
 
@@ -411,41 +409,46 @@ ul { padding: 0; }
 
 /* Hero section desktop version */
 
-@media (min-width: 62.5em) {
+@media (min-width: 43.75em) {
 
   .hero { position: relative; }
+
   .hero__flex {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center; 
+    
   }
 
-  .hero__text { max-width: 30%; }
+  .hero__text {
+    flex: max(400px, 100%/2 - 20px);
+    
+    }
   .hero__text h1{ margin-bottom: 1rem; }
 
   .hero__btn { text-align: left; }
 
   .hero__img {
-    flex: 2;    
+    
+    flex: max(400px, 100%/2 - 20px);
     width: 100%;
     min-height: 40rem;
   }
 
   
   .hero__img::before {
-    left: 40%;
-    background-image: url(images/bg-intro-desktop.svg);
-    background-size: 60%;
    
+    background-image: url(images/bg-intro-desktop.svg);
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     
   
   }
   .hero__img::after {
-    left: 30%;
-    height: 130%;
-    width: 115%;
-    background-position: center bottom;
-    background-size: 55%;
+    height: 100%;
+    width: 100%;
+    background-position: bottom right;
+    background-size: cover;
   }
     
   
