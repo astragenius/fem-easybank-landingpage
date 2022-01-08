@@ -325,8 +325,8 @@ ul { padding: 0; }
 
   
   .nav__desktop a {
-    
     position: relative;
+    display: inline-block;
     font-size: 14px;
     letter-spacing: -0.11px;
     color: hsl(var(--grayish-blue));
@@ -334,19 +334,21 @@ ul { padding: 0; }
   }
   .nav__desktop a:hover { color: hsl(var(--dark-blue)); }
   
-  .nav__desktop a::before {
-    
+  .nav__desktop a::after {
     position: absolute;
-    top: 47px;
+    display: block;
+    top: 240%;
+    height: 3px;
+    width: 0;
     content: "";
     background-color: hsl(var(--lime-green) );
     border-radius: 10px;
   }
   
-  .nav__desktop a:hover::before {
-    width: 51px;
-    height: 4px;
-    transition:all 0.3s linear 0s;
+  .nav__desktop a:hover::after {
+    width: 100%;
+    
+    transition: width .3s;
     
   }
 
