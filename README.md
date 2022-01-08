@@ -25,7 +25,7 @@ Users shuld be able to:
 ### Smartphone (Iphone X)
 IphoneX          |  IphoneX open Menu
 :-------------------------:|:-------------------------:
-![Iphone X](screenshots/IphoneX.jpg)  |  ![Ipone Open Menu](screenshots/IphoneMenu.jpg)
+![Iphone X](./screenshots/IphoneX.jpg)  |  ![Ipone Open Menu](./screenshots/IphoneMenu.jpg)
 
 
 ### Tablet (Ipad)
