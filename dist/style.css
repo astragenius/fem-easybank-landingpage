@@ -481,6 +481,7 @@ ul { padding: 0; }
     background-size: cover;
     background-position: center bottom;
     left: 39%;
+  }
  
 }
 
@@ -491,10 +492,6 @@ ul { padding: 0; }
   padding: 5.875em 0;
   text-align: center;
   background-color: hsl(var(--light-grayish-blue));
-<<<<<<< HEAD
-=======
-  
->>>>>>> 70118eab99fa1ad5b14563770b50787c9befa635
 }
 .choose img {
   display: inline-block;
