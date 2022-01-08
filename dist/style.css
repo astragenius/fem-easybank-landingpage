@@ -408,8 +408,19 @@ ul { padding: 0; }
 
 /* tablet version */
 
-@media (min-width: 52.3125em) {
+@media (min-width: 52.125em) {
   
+
+  .hero__img {
+    min-height: 40.5rem;
+  }
+
+  .hero__text {
+    margin-top: 3em;
+    text-align: left;
+  }
+
+
 }
 
 
@@ -477,6 +488,12 @@ ul { padding: 0; }
 
 /* Tablet version */
 
+@media (min-width: 52.125em) {
+
+  .choose__text {
+    width: 80%;
+  }
+}
 
 /* Choose section Desktop version */
 
@@ -499,7 +516,7 @@ ul { padding: 0; }
   .choose img { margin-bottom: 2.5em; }
 
   .choose__text {
-    width: 40%;
+    width: 80%;
     text-align: left;
   }
   
