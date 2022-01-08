@@ -491,7 +491,7 @@ ul { padding: 0; }
 .choose {
   padding: 5em 0;
   text-align: center;
-  background-color: hsl(var(--light-gray));
+  background-color: hsl(var(--light-grayish-blue));
 }
 .choose img {
   display: inline-block;
